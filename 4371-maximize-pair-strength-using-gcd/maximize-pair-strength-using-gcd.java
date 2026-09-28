@@ -9,7 +9,7 @@ class Solution {
 
                 long g = gcd(nums[i], nums[j]);
 
-                long ans = (long) nums[i] * nums[j] / (g * g);
+                long ans = (long) (nums[i] / g) * (nums[j] / g);
 
                 Maxans = Math.max(Maxans, ans);
             }
